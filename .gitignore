@@ -1,0 +1,25 @@
+# Archives
+*.zip
+files.zip
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.sublime-*
+
+# Environment
+.env
+.env.local
+
+# Misc
+node_modules/
+.cache/
+*.log
