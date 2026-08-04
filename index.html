@@ -25,19 +25,28 @@
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏕</text></svg>">
   <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏕</text></svg>">
 
-  <!-- Preconnect -->
+  <!-- Preconnect and DNS Prefetch -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://images.unsplash.com">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800;900&family=Instrument+Serif:ital,wght@0,400;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <!-- Preload Critical LCP Background Image -->
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1448375240586-882707db888b?w=1000&q=75" media="(max-width: 900px)">
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1448375240586-882707db888b?w=2000&q=85" media="(min-width: 901px)">
 
-  <!-- GSAP -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- Non-blocking Google Fonts loading -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800;900&family=Instrument+Serif:ital,wght@0,400;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800;900&family=Instrument+Serif:ital,wght@0,400;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800;900&family=Instrument+Serif:ital,wght@0,400;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" />
+  </noscript>
 
-  <!-- Lenis Smooth Scroll -->
-  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <!-- Defer Non-critical JS Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
 
   <style>
   /* ═══════════════════════════════════════════════
@@ -440,9 +449,19 @@
     background: url('https://images.unsplash.com/photo-1448375240586-882707db888b?w=2000&q=85') center/cover no-repeat;
     transform: scale(1.15);
   }
+  @media (max-width: 900px) {
+    .hero-bg {
+      background-image: url('https://images.unsplash.com/photo-1448375240586-882707db888b?w=1000&q=75');
+    }
+  }
   .hero-mid {
     background: url('https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=1600&q=75') center bottom/cover no-repeat;
     opacity: 0.35;
+  }
+  @media (max-width: 900px) {
+    .hero-mid {
+      background-image: url('https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=800&q=60');
+    }
   }
   .hero-vignette {
     background: radial-gradient(ellipse at center, transparent 20%, rgba(6,15,8,.8) 100%);
@@ -1841,10 +1860,10 @@
     <div class="about-grid">
       <div class="about-imgs gsap-reveal-left">
         <div class="a-img-main">
-          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1000&q=80" alt="Open road through nature" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1000&q=80" srcset="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=500&q=70 500w, https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1000&q=80 1000w" sizes="(max-width: 900px) 100vw, 50vw" alt="Open road through nature" loading="lazy">
         </div>
         <div class="a-img-small">
-          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=700&q=80" alt="Forest Path" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=700&q=80" srcset="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&q=70 400w, https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=700&q=80 700w" sizes="(max-width: 900px) 60vw, 30vw" alt="Forest Path" loading="lazy">
         </div>
         <div class="a-badge gsap-pop">
           <div class="big">5★</div>
@@ -1897,7 +1916,7 @@
 
       <div class="car-card glass" data-cursor-label="View Details">
         <div class="car-img">
-          <img src="https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?w=800&q=80" alt="Luxury Explorer" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?w=800&q=80" srcset="https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?w=500&q=70 500w, https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?w=800&q=80 800w" sizes="(max-width: 900px) 100vw, 33vw" alt="Luxury Explorer" loading="lazy">
           <div class="car-img-overlay"></div>
           <div class="car-badge">⭐ Most Popular</div>
           <div class="car-quick">👁</div>
@@ -1922,7 +1941,7 @@
 
       <div class="car-card glass" data-cursor-label="View Details">
         <div class="car-img">
-          <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=800&q=80" alt="Road Wanderer" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=800&q=80" srcset="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=500&q=70 500w, https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=800&q=80 800w" sizes="(max-width: 900px) 100vw, 33vw" alt="Road Wanderer" loading="lazy">
           <div class="car-img-overlay"></div>
           <div class="car-badge" style="background:var(--c-forest);color:var(--c-lime)">🌿 New</div>
           <div class="car-quick">👁</div>
@@ -1946,7 +1965,7 @@
 
       <div class="car-card glass" data-cursor-label="View Details">
         <div class="car-img">
-          <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&q=80" alt="Compact Wanderer" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&q=80" srcset="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=500&q=70 500w, https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&q=80 800w" sizes="(max-width: 900px) 100vw, 33vw" alt="Compact Wanderer" loading="lazy">
           <div class="car-img-overlay"></div>
           <div class="car-badge" style="background:var(--c-gold-l);color:var(--c-deep)">💛 Best Value</div>
           <div class="car-quick">👁</div>
@@ -2325,6 +2344,7 @@
      JAVASCRIPT — GSAP + LENIS + ALL MOTION
 ══════════════════════════════════════════ -->
 <script>
+window.addEventListener('DOMContentLoaded', () => {
 (function() {
 'use strict';
 
@@ -2427,7 +2447,12 @@ let lenis;
 
 function initAfterLoad() {
   if (!prefersReduced) {
-    lenis = new Lenis({ lerp: 0.085, smoothWheel: true, touchMultiplier: 1.5 });
+    lenis = new Lenis({
+      lerp: 0.085,
+      smoothWheel: true,
+      smoothTouch: false,
+      touchMultiplier: 1.5
+    });
     function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
     requestAnimationFrame(raf);
     lenis.on('scroll', ScrollTrigger.update);
@@ -3094,6 +3119,7 @@ document.querySelectorAll('.footer-bot p, .mob-bar span').forEach(el => {
 });
 
 })(); // end IIFE
+}); // end DOMContentLoaded
 </script>
 
 </body>
