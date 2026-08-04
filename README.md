@@ -68,4 +68,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-📍 *Based in Panvel, Maharashtra, India*
+📍 *Based in Mumbai, Maharashtra, India*
