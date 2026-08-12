@@ -117,7 +117,7 @@ To clone, test, and run the project locally, execute the following commands:
 2. Under **Build and deployment**, select **Deploy from a branch** as the source.
 3. Choose the `main` branch and `/ (root)` folder, then click **Save**.
 
-### Deploying to Vercel
+### Deploying to Vercel.
 You can deploy this static landing page to Vercel instantly:
 ```bash
 npm install -g vercel
