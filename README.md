@@ -126,7 +126,7 @@ vercel
 
 ---
 
-## 🏎 Performance Optimization Deep-Dive
+## 🏎 Performance Optimization Deep-Dive.
 
 - **LCP background Image Preload:** The primary Hero cover photo is preloaded with media query overrides (`w=1000&q=75` for mobile, `w=2000&q=85` for desktop) directly in the head. This allows the browser to request the image in parallel with parsing the DOM.
 - **Responsive Srcset Resolution:** Card photos load dynamic widths relative to the device width. Mobile viewports receive a compressed 500px variant to keep network payloads under 50KB.
