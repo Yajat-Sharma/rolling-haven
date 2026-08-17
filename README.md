@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <strong>An award-winning, high-performance landing experience designed for the roadd less traveled.</strong>
+  <strong>An award-winning, high-performance landing experience designed for the road less traveled.</strong>
 </p>
 
 <p align="center">
