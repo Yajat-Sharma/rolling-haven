@@ -59,7 +59,7 @@ We optimized our asset loaders, network preconnections, and script execution str
 
 | Audit Category | Mobile Score | Desktop Score | Target Rating |
 |---|:---:|:---:|:---:|
-| ⚡ **Performance** | **96 / 100** | **97 / 100** | Excellent |
+| ⚡ **Performance** | **96 / 100** | **98 / 100** | Excellent |
 | ♿ **Accessibility** | **95+ / 100** | **95+ / 100** | WCAG AA Compliant |
 | 🛡️ **Best Practices** | **100 / 100** | **100 / 100** | Secure & Standard |
 | 🔍 **SEO** | **100 / 100** | **100 / 100** | Fully Indexed |
