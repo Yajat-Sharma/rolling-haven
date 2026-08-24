@@ -68,7 +68,7 @@ We optimized our asset loaders, network preconnections, and script execution str
 
 ## 🛠 Tech Stack
 
-| Component | Technology | Role |
+| Component | Technology | Role|
 |---|---|---|
 | **Core Structure** | HTML5 | Semantic architecture & SEO index tags |
 | **Styles & Theme** | CSS3 | Vanilla CSS custom variables, custom grids, and viewport media queries |
