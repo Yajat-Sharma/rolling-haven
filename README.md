@@ -39,8 +39,6 @@ The site is engineered to meet top-tier design standards (inspired by Apple, Por
   </a>
 </p>
 
----
-
 ## ✨ Key Features
 
 - 🎨 **Premium Aesthetic & Layout:** A luxury theme featuring warm cream, deep forest, and vibrant lime tones. Designed with soft noise overlays, progressive glassmorphism, and structured card components.
