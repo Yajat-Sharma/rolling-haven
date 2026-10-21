@@ -105,7 +105,6 @@ To clone, test, and run the project locally, execute the following commands:
    ```bash
    npx http-server .
    ```
-
 ---
 
 ## 🌐 Production Deployment
