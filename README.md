@@ -32,7 +32,6 @@
 **Rolling Haven** is a premium caravan rental website designed to evoke the freedom of the open road and India's scenic landscapes. Built with a focus on modern aesthetic details, clean layout hierarchy, fluid scroll-driven animations, and optimized Core Web Vitals, it offers a seamless booking experience.
 
 The site is engineered to meet top-tier design standards (inspired by Apple, Porsche, and Awwwards winners) while serving as a fast, accessible, and responsive landing portal.
-
 <p align="center">
   <a href="https://yajat-sharma.github.io/rolling-haven/">
     <strong>🚀 Explore Live Demo</strong>
