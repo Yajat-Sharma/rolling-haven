@@ -119,7 +119,6 @@ You can deploy this static landing page to Vercel instantly:
 npm install -g vercel
 vercel
 ```
-
 ---
 
 ## 🏎 Performance Optimization Deep-Dive.
