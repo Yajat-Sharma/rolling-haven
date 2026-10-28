@@ -106,7 +106,7 @@ To clone, test, and run the project locally, execute the following commands:
    ```
 ---
 
-## 🌐 Production Deployment
+## 🌐 Production Deployment.
 
 ### Deploying to GitHub Pages
 1. Go to **Settings > Pages** on your GitHub repository.
