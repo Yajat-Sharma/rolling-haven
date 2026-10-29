@@ -10,7 +10,6 @@
 <p align="center">
   <strong>An award-winning, high-performance landing experience designed for the road less traveled.</strong>
 </p>
-
 <p align="center">
   <a href="https://github.com/Yajat-Sharma/rolling-haven/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Yajat-Sharma/rolling-haven?style=for-the-badge&color=7ec84a&labelColor=0f2218" alt="License" /></a>
   <a href="https://github.com/Yajat-Sharma/rolling-haven/commits/main"><img src="https://img.shields.io/github/last-commit/Yajat-Sharma/rolling-haven?style=for-the-badge&color=7ec84a&labelColor=0f2218" alt="Last Commit" /></a>
