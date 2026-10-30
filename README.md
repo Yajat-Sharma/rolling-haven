@@ -6,7 +6,6 @@
     <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=1200&q=80" alt="Rolling Haven Banner" width="100%" style="border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.15);" />
   </a>
 </p>
-
 <p align="center">
   <strong>An award-winning, high-performance landing experience designed for the road less traveled.</strong>
 </p>
